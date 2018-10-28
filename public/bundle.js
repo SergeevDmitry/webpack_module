@@ -86,43 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./greeter.js":
-/*!********************!*\
-  !*** ./greeter.js ***!
-  \********************/
-/*! exports provided: Greeter */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Greeter", function() { return Greeter; });
-class Greeter {
-  great(greeting, object) {
-    return `${greeting}, ${object}`;
-  }
-}
-
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _greeter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greeter */ "./greeter.js");
-
-
-const greeter = new _greeter__WEBPACK_IMPORTED_MODULE_0__["Greeter"]();
-
-const message = greeter.great('Hello', 'Webpack');
-
-console.log(message);
-
+throw new Error("Module build failed (from ../node_modules/babel-loader/lib/index.js):\nTypeError: Cannot read property 'bindings' of null\n    at Scope.moveBindingTo (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/scope/index.js:867:13)\n    at BlockScoping.updateScopeInfo (/home/sergeevdms/workspace/webpack_example/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:364:17)\n    at BlockScoping.run (/home/sergeevdms/workspace/webpack_example/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:330:12)\n    at PluginPass.BlockStatementSwitchStatementProgram (/home/sergeevdms/workspace/webpack_example/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:70:24)\n    at newFn (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/visitors.js:193:21)\n    at NodePath._call (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/path/context.js:53:20)\n    at NodePath.call (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/path/context.js:40:17)\n    at NodePath.visit (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/path/context.js:88:12)\n    at TraversalContext.visitQueue (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/context.js:118:16)\n    at TraversalContext.visitSingle (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/context.js:90:19)\n    at TraversalContext.visit (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/context.js:146:19)\n    at Function.traverse.node (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/index.js:94:17)\n    at traverse (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/traverse/lib/index.js:76:12)\n    at transformFile (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/core/lib/transformation/index.js:88:29)\n    at runSync (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/core/lib/transformation/index.js:45:3)\n    at runAsync (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/home/sergeevdms/workspace/webpack_example/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
 
 /***/ })
 
