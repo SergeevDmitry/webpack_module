@@ -1,7 +1,8 @@
-import { Greeter } from './greeter.js'; 
+import $ from 'jquery';
+import { Greeter } from './greeter';
 
 const greeter = new Greeter();
 
 const message = greeter.great('Hello', 'Webpack');
 
-console.log(message);
+$('body').text(message);
